@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import csv
+r_path = './data/csv_example.csv'
 
 
 def read_csv():
-    r_path = '../data/csv_example.csv'
     csv_file=csv.reader(open(r_path,'r', encoding='utf-8'))
     print(csv_file)  # 可以先输出看一下该文件是什么样的类型
     content = []
